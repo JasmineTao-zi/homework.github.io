@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang='zh'><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Hugo创建文档网站 | 作业</title>
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://homework.github.io/css/eureka.min.css">
+
+
+
+
+<script defer src="https://homework.github.io/js/eureka.min.js"></script>
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap"
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/styles/solarized-light.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/highlight.min.js"></script>
+<script async src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/js/all.min.js" integrity="sha256-uNYoXefWRqv&#43;PsIF/OflNmwtKM4lStn9yrz2gVl6ymo="
+    crossorigin="anonymous"></script>
+
+
+
+
+<link rel="icon" type="image/png" sizes="32x32" href="https://homework.github.io/images/icon_hu64421c6c7700f606f0ad45d807017b09_5843_32x32_fill_box_center_2.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://homework.github.io/images/icon_hu64421c6c7700f606f0ad45d807017b09_5843_180x180_fill_box_center_2.png">
+
+
+
+
+<meta name="description"
+    content="准备工作  首先要有一个github账号 下载Hugo：https://github.com/gohugoio/hugo/releases 下载Git： https://git-scm.com/download/win  1、Hugo安装 在Hugo下载地址中根据不同操作系统，选择对应的压缩包。此处以Windows系统为例，如图：
+安装适配
+下载后解压，然后将hugo.exe所在的完整路径添加到环境变量中。
+验证Hugo是否安装成功
+不管在哪种系统中安装Hugo，最后我们都可以在命令行窗口使用下面命令查看Hugo是否安装成功：
+hugo version  2、Git安装 进入git官网安装，选择Windows版本：
+Git是否安装成功
+具体方法 1、创建站点 Hugo和Git安装成功以后，在Git窗口输入命令创建站点：
+hugo new site homework  新的站点文件夹homework将自动生成到当前目录下： 执行完 hugo new site homework命令后会得到一个包含以下文件的目录。
+archetypes config.toml #配置文件； content #存储网站所有文档内容； data #数据； layouts #全局样式，优先级高于主题下的 layouts 文件夹； static #静态文件，优先级高于主题下的 static 文件夹； themes #主题目录;  2、下载主题 在Hugo主题列表中选择自己喜欢的主题进行下载，以Eureka为例：
+点击Homepage，进入主题详情页面，可根据入门说明快速搭建一个Eureka主题的Hugo网站；
+也可进入主题页面，点击Download，下载主题zip压缩包；
+将下载解压好的文件复制到themes文件夹下，注意：此处需将文件命名为主题名字。
+3、适配主题启动站点 根据Eureka主题说明，将主题文件夹中exampleSite中的config文件夹复制到项目根目录下，对config文件夹的内容进行配置。配置后删除原先的config.toml文件即可。
+完成以上步骤后使用在Git窗口使用 hugo server命令，并在浏览器中输入地址http://localhost:1313/ 即可在预览项目：
+hugo server  4、创建页面和文章 新建一个about页面: hugo new about.md  about.md 自动生成到了 content/about.md，内容如下：
+--- title: &quot;About&quot; date: 2020-11-06T18:29:08&#43;08:00 draft: true ---  文档编辑 使用Git对文档进行编辑">
+
+
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+"@type": "ListItem",
+"position":  1 ,
+"name": "作业",
+"item": "https://homework.github.io/"
+},{
+"@type": "ListItem",
+"position":  2 ,
+"name": "Docs",
+"item": "https://homework.github.io/docs/"
+},{
+"@type": "ListItem",
+"position":  3 ,
+"name": "Hugo创建文档网站",
+"item": "https://homework.github.io/docs/example-doc/"
+}]
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://homework.github.io/docs/example-doc/"
+    },
+    "headline": "Hugo创建文档网站 | 作业","wordCount":  147 ,
+    "publisher": {
+        "@type": "Person",
+        "name": "Example publisher",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://homework.github.io/images/icon.png"
+        }
+        },
+    "description": "准备工作  首先要有一个github账号 下载Hugo：https:\/\/github.com\/gohugoio\/hugo\/releases 下载Git： https:\/\/git-scm.com\/download\/win  1、Hugo安装 在Hugo下载地址中根据不同操作系统，选择对应的压缩包。此处以Windows系统为例，如图：\n安装适配\n下载后解压，然后将hugo.exe所在的完整路径添加到环境变量中。\n验证Hugo是否安装成功\n不管在哪种系统中安装Hugo，最后我们都可以在命令行窗口使用下面命令查看Hugo是否安装成功：\nhugo version  2、Git安装 进入git官网安装，选择Windows版本：\nGit是否安装成功\n具体方法 1、创建站点 Hugo和Git安装成功以后，在Git窗口输入命令创建站点：\nhugo new site homework  新的站点文件夹homework将自动生成到当前目录下： 执行完 hugo new site homework命令后会得到一个包含以下文件的目录。\narchetypes config.toml #配置文件； content #存储网站所有文档内容； data #数据； layouts #全局样式，优先级高于主题下的 layouts 文件夹； static #静态文件，优先级高于主题下的 static 文件夹； themes #主题目录;  2、下载主题 在Hugo主题列表中选择自己喜欢的主题进行下载，以Eureka为例：\n点击Homepage，进入主题详情页面，可根据入门说明快速搭建一个Eureka主题的Hugo网站；\n也可进入主题页面，点击Download，下载主题zip压缩包；\n将下载解压好的文件复制到themes文件夹下，注意：此处需将文件命名为主题名字。\n3、适配主题启动站点 根据Eureka主题说明，将主题文件夹中exampleSite中的config文件夹复制到项目根目录下，对config文件夹的内容进行配置。配置后删除原先的config.toml文件即可。\n完成以上步骤后使用在Git窗口使用 hugo server命令，并在浏览器中输入地址http:\/\/localhost:1313\/ 即可在预览项目：\nhugo server  4、创建页面和文章 新建一个about页面: hugo new about.md  about.md 自动生成到了 content\/about.md，内容如下：\n--- title: \u0026quot;About\u0026quot; date: 2020-11-06T18:29:08\u002b08:00 draft: true ---  文档编辑 使用Git对文档进行编辑"
+}
+</script>
+
+<meta property="og:title" content="Hugo创建文档网站 | 作业" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://homework.github.io/docs/example-doc/" />
+
+
+
+
+
+<meta property="og:description" content="第一次使用Hugo" />
+
+
+
+
+
+<meta property="og:locale" content="zh" />
+
+
+
+
+<meta property="og:site_name" content="作业" />
+
+
+
+
+
+
+<meta property="og:updated_time" content="2020-11-07T16:44:32&#43;08:00" />
+
+
+
+<meta property="article:section" content="docs" />
+
+
+
+<link rel="alternate" type="application/rss+xml" href="https://homework.github.io/docs/example-doc/index.xml" title="作业" />
+<body class="flex flex-col min-h-screen">
+    <header class="flex items-center fixed w-full min-h-16 z-50 bg-secondary-bg shadow-sm">
+        <div class="container mx-auto">
+            <div class="max-w-screen-xl"><script>
+    let storageColorScheme = localStorage.getItem("lightDarkMode")
+    if (((storageColorScheme == 'Auto' || storageColorScheme == null) && window.matchMedia("(prefers-color-scheme: dark)").matches)
+        || storageColorScheme == "Dark") {
+        document.getElementsByTagName('html')[0].classList.add('dark')
+    } else if (storageColorScheme == "Light") {
+        document.getElementsByTagName('html')[0].classList.remove('dark')
+    }
+</script>
+<nav class="flex items-center justify-between flex-wrap p-4">
+    <a href="https://homework.github.io/" class="mr-6 text-primary-text text-xl font-bold">作业</a>
+    <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2" aria-label="Open Navbar">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div id="target"
+        class="hidden block md:flex md:flex-grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
+        <div class="text-sm md:flex-grow pb-4 md:pb-0 border-b md:border-b-0" id="current-url"
+            currenturl="https://homework.github.io/docs/example-doc/">
+            
+            <a href="/about/"
+                class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">关于</a>
+            
+            <a href="/posts/"
+                class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">文章</a>
+            
+            <a href="/docs/"
+                class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">作业内容</a>
+            
+        </div>
+
+        <div class="flex">
+            <div class="relative pt-4 md:pt-0">
+                <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
+                    <i class="fas fa-adjust"></i>
+                </div>
+                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
+                </div>
+                <div class="absolute flex flex-col left-0 md:left-auto right-auto md:right-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
+                    id='lightDarkOptions'>
+                    <span class="px-4 py-1 hover:text-eureka">Light</span>
+                    <span class="px-4 py-1 hover:text-eureka">Dark</span>
+                    <span class="px-4 py-1 hover:text-eureka">Auto</span>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id="is-open-mobile">
+    </div>
+
+</nav>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        getcolorscheme();
+        switchBurger();
+        
+    });
+
+    let currenturl = document.getElementById('current-url').getAttribute('currenturl')
+        if (currenturl.length > 1) {
+            currenturl = currenturl.substr(0, currenturl.length - 1)
+        }
+
+        sessionStorage.setItem("mainKey", currenturl)
+
+        let elements = document.getElementsByClassName('main-a');
+        for (let i in elements) {
+            if (typeof elements[i] === "object") {
+                let elementurl = elements[i].getAttribute('href')
+                if (elementurl.length > 1 && elementurl.charAt(elementurl.length - 1) == '/') {
+                    elementurl = elementurl.substr(0, elementurl.length - 1)
+                }
+                if (elementurl == sessionStorage.getItem("mainKey")) {
+                    elements[i].classList.add('text-eureka')
+                } else {
+                    elements[i].classList.remove('text-eureka')
+                }
+            }
+        }
+</script></div>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-16">
+        
+        <div class="container mx-auto ">
+            <div class="max-w-screen-xl lg:px-4 xl:px-8">
+
+
+<div class="lg:pt-12">
+    <div class="flex flex-col md:flex-row bg-secondary-bg rounded">
+        <div class="md:w-1/4 lg:w-1/5 border-r">
+            <div class="sticky top-16 pt-6">
+                
+
+
+<div id="sidebar-title" class="md:hidden mx-4 px-2 pt-4 pb-2 md:border-b text-tertiary-text md:text-primary-text">
+    <span class="font-semibold">Table of Contents</span>
+    <i class="fas fa-caret-right ml-1"></i>
+</div>
+
+<div id="sidebar-toc"
+    class="hidden md:block overflow-y-auto mx-6 md:mx-0 pr-6 pt-2 md:max-h-doc-sidebar bg-primary-bg md:bg-transparent">
+    <div class="flex flex-wrap ml-4 -mr-2 p-2 bg-secondary-bg md:bg-primary-bg rounded">
+        <a class="text-eureka hover:text-eureka"
+            href="https://homework.github.io/docs/example-doc/">Hugo创建文档网站</a>
+        
+        
+        
+
+
+    </div>
+    
+<ul class="pl-6">
+    
+</ul>
+
+</div>
+
+
+
+            </div>
+
+        </div>
+        <div class="w-full md:w-3/4 lg:w-4/5 pb-8 pt-2 md:pt-8">
+            <div class="w-full lg:w-3/4 pl-6 ml-0 mr-auto">
+                <h1 class="font-bold text-3xl text-primary-text">Hugo创建文档网站</h1>
+                <div class="flex flex-wrap flex-row items-center my-2 text-tertiary-text">
+    <div class="mr-6 my-2">
+        <i class="fas fa-calendar mr-1"></i>
+        <span>2020-11-07</span>
+    </div>
+    <div class="mr-6 my-2">
+        <i class="fas fa-clock mr-1"></i>
+        <span>1 min read</span>
+    </div>
+    
+    
+
+    
+</div>
+            </div>
+            <div class="flex">
+                <div class="w-full lg:w-3/4 px-6">
+                    
+                    
+                    <div class="content">
+                        <h2 id="准备工作">准备工作</h2>
+<ul>
+<li>首先要有一个github账号</li>
+<li>下载Hugo：<a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a></li>
+<li>下载Git： <a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a></li>
+</ul>
+<h3 id="1hugo安装">1、Hugo安装</h3>
+<p>在<a href="https://github.com/gohugoio/hugo/releases">Hugo下载地址</a>中根据不同操作系统，选择对应的压缩包。此处以Windows系统为例，如图：</p>
+<p><img src="https://ftp.bmp.ovh/imgs/2020/11/e64387c47f3965b1.png" alt="01"></p>
+<p>安装适配</p>
+<p>下载后解压，然后将hugo.exe所在的完整路径添加到环境变量中。</p>
+<p><img src="https://ftp.bmp.ovh/imgs/2020/11/cb9e12edaa43eb20.png" alt="02"></p>
+<p>验证Hugo是否安装成功</p>
+<p>不管在哪种系统中安装Hugo，最后我们都可以在命令行窗口使用下面命令查看Hugo是否安装成功：</p>
+<pre><code>hugo version 
+</code></pre>
+<p><img src="https://ftp.bmp.ovh/imgs/2020/11/c86a7bd8a3a44feb.png" alt="04"></p>
+<h3 id="2git安装">2、Git安装</h3>
+<p>进入git官网安装，选择Windows版本：</p>
+<p><img src="https://ftp.bmp.ovh/imgs/2020/11/e7987938f21a9ea2.png" alt="03"></p>
+<p>Git是否安装成功</p>
+<p><img src="https://ftp.bmp.ovh/imgs/2020/11/1838ad9681432e62.png" alt="05"></p>
+<h2 id="具体方法">具体方法</h2>
+<h3 id="1创建站点">1、创建站点</h3>
+<p>Hugo和Git安装成功以后，在Git窗口输入命令创建站点：</p>
+<pre><code>hugo new site homework
+</code></pre>
+<p><img src="https://ftp.bmp.ovh/imgs/2020/11/4cd23ca048d158ba.png" alt="06"></p>
+<p>新的站点文件夹homework将自动生成到当前目录下：
+执行完 <code>hugo new site homework</code>命令后会得到一个包含以下文件的目录。</p>
+<pre><code>archetypes
+config.toml  #配置文件；
+content      #存储网站所有文档内容；
+data         #数据；
+layouts      #全局样式，优先级高于主题下的 layouts 文件夹；
+static       #静态文件，优先级高于主题下的 static 文件夹；
+themes       #主题目录;
+</code></pre>
+<p><img src="https://ftp.bmp.ovh/imgs/2020/11/f899d28d723707ff.png" alt="07"></p>
+<h3 id="2下载主题">2、下载主题</h3>
+<p>在<a href="https://themes.gohugo.io/tags/documentation/">Hugo主题列表</a>中选择自己喜欢的主题进行下载，以Eureka为例：</p>
+<p><img src="https://ftp.bmp.ovh/imgs/2020/11/912f06a84fbc51d1.png" alt="08"></p>
+<p>点击Homepage，进入主题详情页面，可根据入门说明快速搭建一个Eureka主题的Hugo网站；</p>
+<p><img src="https://ftp.bmp.ovh/imgs/2020/11/f5cf42b37da463e8.png" alt="09"></p>
+<p>也可进入主题页面，点击Download，下载主题zip压缩包；</p>
+<p><img src="https://ftp.bmp.ovh/imgs/2020/11/efa489bf74d7d0a7.png" alt="10"></p>
+<p>将下载解压好的文件复制到themes文件夹下，注意：此处需将文件命名为主题名字。</p>
+<p><img src="https://ftp.bmp.ovh/imgs/2020/11/d0d982abb493cb47.png" alt="11"></p>
+<h3 id="3适配主题启动站点">3、适配主题启动站点</h3>
+<p>根据Eureka主题说明，将主题文件夹中exampleSite中的config文件夹复制到项目根目录下，对config文件夹的内容进行配置。配置后删除原先的config.toml文件即可。</p>
+<p><img src="https://ftp.bmp.ovh/imgs/2020/11/b10d9c818d6a3fe1.png" alt="12"></p>
+<p>完成以上步骤后使用在Git窗口使用 hugo server命令，并在浏览器中输入地址http://localhost:1313/ 即可在预览项目：</p>
+<pre><code>hugo server
+</code></pre>
+<p><img src="https://ftp.bmp.ovh/imgs/2020/11/e8223694b4924493.png" alt="13"></p>
+<h3 id="4创建页面和文章">4、创建页面和文章</h3>
+<h4 id="新建一个about页面">新建一个about页面:</h4>
+<pre><code>hugo new about.md
+</code></pre>
+<p><img src="https://ftp.bmp.ovh/imgs/2020/11/0cbe1263c60dc9ac.png" alt="14">
+about.md 自动生成到了 content/about.md，内容如下：</p>
+<pre><code>---
+title: &quot;About&quot;
+date: 2020-11-06T18:29:08+08:00
+draft: true
+---
+</code></pre>
+<h4 id="文档编辑">文档编辑</h4>
+<p>使用Git对文档进行编辑</p>
+<pre><code>vim content/about.md
+</code></pre>
+<p><img src="https://ftp.bmp.ovh/imgs/2020/11/f5c4745b310ee27f.png" alt="15"></p>
+<p>使用Visual Studio Code进行文档编写，需提前在左侧扩展中下载Markdown ALL in one和markdownlint插件；
+<img src="https://ftp.bmp.ovh/imgs/2020/11/59644900be004290.png" alt="16"></p>
+<p>其次，根据自身文章内容进行编辑，并预览；
+<img src="https://ftp.bmp.ovh/imgs/2020/11/748b65b5c6e3ae78.png" alt="17"></p>
+<h4 id="创建第一篇文章放到posts目录">创建第一篇文章，放到posts目录：</h4>
+<pre><code>hugo new posts/first.md
+</code></pre>
+<p>first.md 自动生成到content/posts/first.md, 内容如下：</p>
+<pre><code>---
+title: &quot;First&quot;
+date: 2020-11-07T12:39:02+08:00
+draft: true
+---
+</code></pre>
+<p>文档编辑方法与上述方法相同，注意若想要将文章在站点显示需将draft:true 改为draft:false。</p>
+<h3 id="5修改配置文件">5、修改配置文件</h3>
+<p>站点Title修改：编辑器打开config.toml进行修改和保存，此处将title修改为作业；</p>
+<p><img src="https://i.bmp.ovh/imgs/2020/11/3fdea75c924e86aa.png" alt="17"></p>
+<p>站点菜单栏的修改：编辑器打开menus.toml进行修改和保存，此处修改菜单名称，并将多余菜单Docs进行注释。</p>
+<p><img src="https://ftp.bmp.ovh/imgs/2020/11/62e696e8445a389c.png" alt="18"></p>
+<h3 id="6将网站部署到github-page上">6、将网站部署到GitHub Page上</h3>
+<p>打开GitHub，创建一个仓库，仓库名填写“用户名+github.io”，点击创建</p>
+<p><img src="https://s1.ax1x.com/2020/11/07/B5F4w6.png" alt="19"></p>
+<p>在站点根目录执行 Hugo 命令生成最终页面：</p>
+<pre><code>hugo --theme=eureka --baseUrl=&quot;https://JasmineTao-zi.github.io/&quot; --buildDrafts
+</code></pre>
+<p><img src="https://s1.ax1x.com/2020/11/07/B5AsxJ.png" alt="20"></p>
+<p>部署完成后，所有静态页面都会生成到 public 目录</p>
+<p><img src="https://s1.ax1x.com/2020/11/07/B5E4wq.png" alt=""></p>
+<p>进入public文件目录下，对public文件夹进行初始化</p>
+<pre><code>git init
+</code></pre>
+<p>添加public中的所有文件：</p>
+<pre><code>git add .
+</code></pre>
+<p>提交(其中引号内为备注)：</p>
+<pre><code>git commit -m &quot;Homework&quot;
+</code></pre>
+<p>链接刚创建的GitHub仓库地址：</p>
+<pre><code>git remote add origin https://github.com/JasmineTao-zi/JasmineTao-zi.github.io.git
+</code></pre>
+<p>将pubilc目录里所有文件 push 到刚创建的Repository的 master 分支。</p>
+<pre><code>git push -u origin master</code></pre>
+
+                    </div>
+                    
+                    
+
+                    
+
+                    
+                    
+                </div>
+                
+                <div class="hidden lg:block lg:w-1/4">
+                    
+                    <div class="sticky top-16 pt-16 -mt-16 bg-secondary-bg z-10 text-lg font-semibold hidden lg:block px-6 py-4">
+    <h2 class="subtitle">On This Page</h2>
+</div>
+<div class="sticky-toc top-32 pt-10 -mt-10 hidden lg:block border-l px-6 pb-2 mb-4">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#准备工作">准备工作</a>
+      <ul>
+        <li><a href="#1hugo安装">1、Hugo安装</a></li>
+        <li><a href="#2git安装">2、Git安装</a></li>
+      </ul>
+    </li>
+    <li><a href="#具体方法">具体方法</a>
+      <ul>
+        <li><a href="#1创建站点">1、创建站点</a></li>
+        <li><a href="#2下载主题">2、下载主题</a></li>
+        <li><a href="#3适配主题启动站点">3、适配主题启动站点</a></li>
+        <li><a href="#4创建页面和文章">4、创建页面和文章</a>
+          <ul>
+            <li><a href="#新建一个about页面">新建一个about页面:</a></li>
+            <li><a href="#文档编辑">文档编辑</a></li>
+            <li><a href="#创建第一篇文章放到posts目录">创建第一篇文章，放到posts目录：</a></li>
+          </ul>
+        </li>
+        <li><a href="#5修改配置文件">5、修改配置文件</a></li>
+        <li><a href="#6将网站部署到github-page上">6、将网站部署到GitHub Page上</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        enableStickyToc();
+    });
+</script>
+                    
+                </div>
+                
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        hljs.initHighlightingOnLoad();
+        changeSidebarHeight();
+        switchDocToc();
+    })
+</script>
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="container mx-auto">
+            <div class="max-w-screen-xl"><footer class="w-full text-center p-6 pin-b text-sm text-tertiary-text">
+    <p>&copy; 2020 <a href="https://www.wangchucheng.com/">C. Wang</a> and <a href="https://www.ruiqima.com/">R. Ma</a> &middot;  Powered by the <a href="https://github.com/wangchucheng/hugo-eureka" class="hover:text-eureka">Eureka</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a></p>
+</footer></div>
+        </div>
+    </footer>
+</body>
+
+</html>
